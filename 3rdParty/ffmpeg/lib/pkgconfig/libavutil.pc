@@ -1,0 +1,14 @@
+prefix=/Users/momo/Documents/ffmpeg_demo/3rdParty/ffmpeg
+exec_prefix=${prefix}
+libdir=/Users/momo/Documents/ffmpeg_demo/3rdParty/ffmpeg/lib
+includedir=/Users/momo/Documents/ffmpeg_demo/3rdParty/ffmpeg/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 57.18.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Libs.private: 
+Cflags: -I${includedir}

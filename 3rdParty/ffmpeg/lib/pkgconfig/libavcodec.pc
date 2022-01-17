@@ -1,0 +1,14 @@
+prefix=/Users/momo/Documents/ffmpeg_demo/3rdParty/ffmpeg
+exec_prefix=${prefix}
+libdir=/Users/momo/Documents/ffmpeg_demo/3rdParty/ffmpeg/lib
+includedir=/Users/momo/Documents/ffmpeg_demo/3rdParty/ffmpeg/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 59.20.100
+Requires: libswresample >= 4.4.100, libavutil >= 57.18.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -liconv -lm -llzma -lz -framework AudioToolbox -pthread -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Libs.private: 
+Cflags: -I${includedir}

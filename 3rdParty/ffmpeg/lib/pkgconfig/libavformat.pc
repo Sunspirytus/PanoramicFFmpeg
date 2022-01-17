@@ -1,0 +1,14 @@
+prefix=/Users/momo/Documents/ffmpeg_demo/3rdParty/ffmpeg
+exec_prefix=${prefix}
+libdir=/Users/momo/Documents/ffmpeg_demo/3rdParty/ffmpeg/lib
+includedir=/Users/momo/Documents/ffmpeg_demo/3rdParty/ffmpeg/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 59.17.100
+Requires: libavcodec >= 59.20.100, libswresample >= 4.4.100, libavutil >= 57.18.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavformat -lm -lbz2 -lz -Wl,-framework,CoreFoundation -Wl,-framework,Security
+Libs.private: 
+Cflags: -I${includedir}
