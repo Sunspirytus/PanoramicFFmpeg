@@ -37,6 +37,7 @@ set(SamplerSrc ${SampleFiles} ${GladFiles})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/3rdParty/ffmpeg/include)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/3rdParty/glad/include)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/3rdParty/stb_image)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/3rdParty)
 include_directories(${GLFW3_INCLUDE_DIR})
 
 add_executable(${PROJECT_NAME} ${SamplerSrc})
